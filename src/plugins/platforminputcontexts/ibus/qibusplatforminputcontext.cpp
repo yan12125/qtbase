@@ -286,6 +286,8 @@ void QIBusPlatformInputContext::updatePreeditText(const QDBusVariant &text, uint
     QCoreApplication::sendEvent(input, &event);
 
     d->predit = t.text;
+
+    cursorRectChanged();
 }
 
 void QIBusPlatformInputContext::surroundingTextRequired()
