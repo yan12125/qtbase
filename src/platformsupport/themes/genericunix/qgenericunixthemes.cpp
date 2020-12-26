@@ -108,7 +108,6 @@ static bool isDBusTrayAvailable() {
         QDBusMenuConnection conn;
         if (conn.isStatusNotifierHostRegistered())
             dbusTrayAvailable = true;
-        dbusTrayAvailableKnown = true;
         qCDebug(qLcTray) << "D-Bus tray available:" << dbusTrayAvailable;
     }
     return dbusTrayAvailable;
