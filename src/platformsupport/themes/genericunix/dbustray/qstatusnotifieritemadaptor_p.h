@@ -183,6 +183,9 @@ public: // PROPERTIES
     Q_PROPERTY(QXdgDBusToolTipStruct ToolTip READ toolTip)
     QXdgDBusToolTipStruct toolTip() const;
 
+    Q_PROPERTY(QString IconThemePath READ iconThemePath)
+    QString iconThemePath() const;
+
 public Q_SLOTS: // METHODS
     void Activate(int x, int y);
     void ContextMenu(int x, int y);

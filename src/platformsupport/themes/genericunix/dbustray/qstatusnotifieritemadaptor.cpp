@@ -160,6 +160,11 @@ QXdgDBusToolTipStruct QStatusNotifierItemAdaptor::toolTip() const
     return ret;
 }
 
+QString QStatusNotifierItemAdaptor::iconThemePath() const
+{
+    return QString();
+}
+
 void QStatusNotifierItemAdaptor::Activate(int x, int y)
 {
     qCDebug(qLcTray) << x << y;
